@@ -6,7 +6,7 @@ const {nanoid}=require('nanoid');
 const cors=require('cors');
 
 //Server Setup
-const PORT=3000;
+const PORT=process.env.PORT || 3000;
 
 //Database Setup
 const adapter=new FyleSync("db.json");

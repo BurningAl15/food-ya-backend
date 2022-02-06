@@ -1,6 +1,53 @@
 {
   "restaurants": [
+    {
+      "_id": "XfYWzuPb_WLyARfSz4le_",
+      "company_name": "koi sushi bar",
+      "ruc": "12482874872",
+      "company_phone": "998381252",
+      "billing_email": "aldhairvera15@gmail.com",
+      "createdAt": 1644100536161
+    }
   ],
   "users": [
+    {
+      "_id": "fBMd8lMsIjQrRdy4C1EBl",
+      "name": "Sheyla",
+      "surname": "Yaker Quintana",
+      "email": "syaker@gmail.com",
+      "password": "sheylayaker15",
+      "password_confirmation": "sheylayaker15",
+      "dni": "70249231",
+      "direction": "Algún lugar de Lima",
+      "district": "Algún distrito de Lima",
+      "city": "Lima",
+      "createdAt": 1644099368876
+    },
+    {
+      "_id": "yxwEtiKCzrqHdJ0Ddc0A2",
+      "name": "Aldhair",
+      "surname": "Vera Camacho",
+      "email": "aldhairvera15@gmail.com",
+      "password": "aldhairvera15",
+      "password_confirmation": "aldhairvera15",
+      "dni": "71451582",
+      "direction": "Jr. Cerro Prieto 118",
+      "district": "Santiago de Surco",
+      "city": "Lima",
+      "createdAt": 1644099562427
+    },
+    {
+      "_id": "ZqO73eM5YMTvfDqS5w5aT",
+      "name": "Stormy",
+      "surname": "Vera Camacho",
+      "email": "stormy@gmail.com",
+      "password": "stormy123",
+      "password_confirmation": "stormy123",
+      "dni": "71253224",
+      "direction": "algún lugar",
+      "district": "algún lugar",
+      "city": "algún lugar",
+      "createdAt": 1644162034790
+    }
   ]
 }
