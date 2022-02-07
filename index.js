@@ -37,10 +37,17 @@ app.post("/api/restaurants",(req,res)=>{
 
     // Validate body
     const restaurantSchema=joi.object({
-        company_name:joi.string().min(3).max(45).required(),
+        name:joi.string().min(2).max(45).required(),
+        surname:joi.string().min(2).max(45).required(),
+        password: joi.string().required(),
+        password_confirmation: joi.string().required(),
+        dni: joi.string().min(8).max(8).required(),
+
+        business_name:joi.string().min(3).max(45).required(),
         ruc:joi.string().min(11).max(11).required(),
-        company_phone:joi.string().min(9).max(12).required(),
-        billing_email:joi.string().email().required(),
+        business_phone:joi.string().min(9).max(12).required(),
+        business_email:joi.string().email().required(),
+        business_address: joi.string().min(5).max(50).required(),
     })
     const result=restaurantSchema.validate(body);
     const { value, error } = result;
@@ -87,10 +94,10 @@ app.post("/api/users",(req,res)=>{
         name:joi.string().min(2).max(45).required(),
         surname:joi.string().min(2).max(45).required(),
         email: joi.string().email().required(),
-        // photo: joi.string().required(),
         password: joi.string().required(),
         password_confirmation: joi.string().required(),
         dni: joi.string().min(8).max(8).required(),
+        // photo: joi.string().required(),
         direction: joi.string().min(5).max(50).required(),
         district: joi.string().min(5).max(50).required(),
         city: joi.string().min(2).max(50).required(),
