@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=production nodemon index.js",
+    "dev": "cross-env NODE_ENV=production nodemon api/index.js",
     "test": "cross-env NODE_ENV=test jest --verbose",
     "test:watch": "npm run test -- --watch",
-    "start": "cross-env NODE_ENV=development node index.js"
+    "start": "cross-env NODE_ENV=development node api/index.js"
   },
   "keywords": [],
   "author": "",
